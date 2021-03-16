@@ -15,13 +15,26 @@
       },
       {
         "indexed": false,
-        "internalType": "string",
+        "internalType": "uint256",
         "name": "purpose",
-        "type": "string"
+        "type": "uint256"
       }
     ],
     "name": "SetPurpose",
     "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "jacksAge",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
   },
   {
     "inputs": [],
@@ -39,9 +52,9 @@
   {
     "inputs": [
       {
-        "internalType": "string",
+        "internalType": "uint256",
         "name": "newPurpose",
-        "type": "string"
+        "type": "uint256"
       }
     ],
     "name": "setPurpose",
