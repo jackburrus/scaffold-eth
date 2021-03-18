@@ -26,6 +26,7 @@ import { INFURA_ID, DAI_ADDRESS, DAI_ABI, NETWORK, NETWORKS } from "./constants"
     or DM @austingriffith on twitter or telegram
 
     You should get your own Infura.io ID and put it in `constants.js`
+    change!
     (this is your connection to the main Ethereum network for ENS etc.)
 
 
