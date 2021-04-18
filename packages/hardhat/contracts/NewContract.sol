@@ -5,7 +5,7 @@ import "hardhat/console.sol";
 //import "@openzeppelin/contracts/access/Ownable.sol"; //https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
 
 contract NewContract {
-    bool boo = true;
+    bool public boo = true;
      string public text = "Hello";
     /*
     uint stands for unsigned integer, meaning non negative integers
@@ -15,8 +15,8 @@ contract NewContract {
         ...
         uint256 ranges from 0 to 2 ** 256 - 1
     */
-    uint8 u8 = 1;
-    uint256 u256 = 456;
+    uint8 public u8 = 1;
+    uint256 public u256 = 456;
     uint u = 123; // uint is an alias for uint256
 
     /*
@@ -24,10 +24,10 @@ contract NewContract {
     Like uint, different ranges are available from uint8 to uint256
     */
     int8 i8 = -1;
-    int256 i256 = 456;
+    int256 public i256 = 456;
     int i = -123; // int is same as int256
 
-    address addr = 0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c;
+    address public addr = 0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c;
 
     // Default values
     // Unassigned variables have a default value
