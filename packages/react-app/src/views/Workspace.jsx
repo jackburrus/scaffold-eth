@@ -22,15 +22,24 @@ export default function Workspace({
   // keep track of a variable from the contract in the local React state:
 
   const purp = useContractReader(readContracts, "YourContract", "purpose");
-  const func = useContractReader(readContracts, "NewContract", "doSomething");
-  console.log(func ? func : null);
+  // const am = useContractReader(readContracts, "NewContract", "testCallFoo", [
+  //   "0x47Ec97bFC4E57937087cA8B44B60DeEC860d31a4",
+  // ]);
 
+  const func = useContractReader(readContracts, "NewContract", "getTransactionCount");
+
+  // // const { x, y } = func;
+  console.log(func);
+  // console.log(am ? am : null);
+  // console.log(func);
   return (
     <div>
       <div style={{ border: "1px solid #cccccc", padding: 16, width: 400, margin: "auto", marginTop: 64 }}>
         <p>{purp}!!</p>
         <h2>Your Balance: {yourLocalBalance ? formatEther(yourLocalBalance) : "..."}</h2>
-        <h1>{func ? BigNumber.from(func).toString() : null}</h1>
+
+        <Button onClick={() => tx(writeContracts.Gas.forever())}>Run Forever</Button>
+        {/* <h1>User Level {ret ? BigNumber.from(ret).toString() + " 🐕" : null}</h1> */}
       </div>
     </div>
   );
