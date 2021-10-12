@@ -11,7 +11,11 @@
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 scaffold-eth/your-contract"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@graphprotocol/graph-cli": "^0.22.1",
+=======
+    "@graphprotocol/graph-cli": "^0.22.2",
+>>>>>>> 2e71625cd9bc44722f75e437657d82f8e60fa03c
     "@graphprotocol/graph-ts": "^0.22.1"
   },
   "devDependencies": {

@@ -2,7 +2,8 @@ import { CameraOutlined, QrcodeOutlined } from "@ant-design/icons";
 import { Badge, Input } from "antd";
 import { useLookupAddress } from "eth-hooks/dapps/ens";
 import React, { useCallback, useState } from "react";
-import QrReader from "react-qr-reader";
+import dynamic from "next/dynamic";
+const QrReader = dynamic(() => import("react-qr-reader"), { ssr: false });
 import Blockie from "./Blockie";
 
 // probably we need to change value={toAddress} to address={toAddress}
