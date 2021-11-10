@@ -1,4 +1,4 @@
-# 🏗 Scaffold-ETH
+# 🏗 Prose
 
 > everything you need to build on Ethereum! 🚀
 
